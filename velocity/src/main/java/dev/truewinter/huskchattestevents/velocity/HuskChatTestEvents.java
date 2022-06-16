@@ -30,6 +30,6 @@ public class HuskChatTestEvents {
     @Subscribe
     public void onProxyInitialization(ProxyInitializeEvent event) {
         server.getEventManager().register(this, new EventListener(logger));
-        System.out.println("Loaded dev.truewinter.huskchattestevents.velocity.HuskChatTestEvents");
+        System.out.println("Loaded HuskChatTestEvents");
     }
 }

@@ -39,7 +39,7 @@ public class EventListener implements Listener {
 
         ArrayList<String> names = new ArrayList<>();
 
-        for (Player player : event.getReceivers()) {
+        for (Player player : event.getRecipients()) {
             names.add(player.getName());
         }
 

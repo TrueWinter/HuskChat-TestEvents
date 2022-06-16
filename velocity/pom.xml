@@ -30,7 +30,7 @@
             <artifactId>HuskChat</artifactId>
             <version>any</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../lib/HuskChat-Velocity-2.2+rev.36bdef4-indev.jar</systemPath>
+            <systemPath>${basedir}/../lib/HuskChat-Velocity-2.2+rev.e6b3aaa-indev.jar</systemPath>
         </dependency>
     </dependencies>
 

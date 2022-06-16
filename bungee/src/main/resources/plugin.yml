@@ -1,0 +1,4 @@
+name: HuskChatTestEvents
+main: dev.truewinter.huskchattestevents.bungee.HuskChatTestEvents
+version: 0.0.1
+author: TrueWinter

@@ -1,6 +1,6 @@
 # HuskChat-TestEvents
 
-This is a Velocity/Bungee plugin that demonstrates the HuskChat events API.
+This is a Velocity/Bungee plugin that demonstrates the [HuskChat](https://github.com/WiIIiam278/HuskChat) events API.
 
 ## Building
 

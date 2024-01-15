@@ -6,7 +6,7 @@
     <parent>
         <groupId>dev.truewinter</groupId>
         <artifactId>HuskChatTestEvents</artifactId>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
     </parent>
 
     <artifactId>velocity</artifactId>
@@ -26,11 +26,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>net.william278</groupId>
-            <artifactId>HuskChat</artifactId>
-            <version>any</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/../lib/HuskChat-Velocity-2.2+rev.6dda91f-indev.jar</systemPath>
+            <groupId>dev.truewinter.HuskChatTestEvents</groupId>
+            <artifactId>common</artifactId>
+            <version>${parent.version}</version>
         </dependency>
     </dependencies>
 

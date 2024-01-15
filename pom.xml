@@ -6,13 +6,30 @@
 
     <groupId>dev.truewinter</groupId>
     <artifactId>HuskChatTestEvents</artifactId>
-    <version>0.0.2</version>
+    <!-- Do not set version manually, use versions:set instead -->
+    <version>0.0.3</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>bungee</module>
         <module>velocity</module>
+        <module>common</module>
+        <module>bukkit</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.11.0</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
+                    <processAllModules>true</processAllModules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>

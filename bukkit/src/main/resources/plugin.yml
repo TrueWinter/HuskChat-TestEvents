@@ -1,5 +1,5 @@
 name: HuskChatTestEvents
-main: dev.truewinter.huskchattestevents.bungee.HuskChatTestEvents
+main: dev.truewinter.huskchattestevents.bukkit.HuskChatTestEvents
 version: ${project.version}
 author: TrueWinter
 commands:

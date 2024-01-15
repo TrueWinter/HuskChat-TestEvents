@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>HuskChatTestEvents</artifactId>
+        <groupId>dev.truewinter</groupId>
+        <version>0.0.3</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dev.truewinter.HuskChatTestEvents</groupId>
+    <artifactId>common</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.william278</groupId>
+            <artifactId>HuskChat</artifactId>
+            <version>any</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../../HuskChat/target/HuskChat-Plugin-2.7.1-b169dc7-indev.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>24.0.1</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+    </properties>
+
+</project>

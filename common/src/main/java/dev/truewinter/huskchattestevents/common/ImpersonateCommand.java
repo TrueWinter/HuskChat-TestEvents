@@ -2,6 +2,7 @@ package dev.truewinter.huskchattestevents.common;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
+import net.william278.huskchat.HuskChatAPI;
 import net.william278.huskchat.player.Player;
 
 import java.util.Arrays;
@@ -26,10 +27,10 @@ public class ImpersonateCommand<T> {
         String message = Arrays.stream(args).skip(1).collect(Collectors.joining(" "));
 
         hcte.getPlayer(fromPlayerName).ifPresentOrElse(player -> {
-            Player fromPlayer = hcte.getHuskChat().getAPI().adaptPlayer(player);
+            Player fromPlayer = hcte.getHuskChatPlayer(player);
             invoker.sendMessage(Component.text("Sending message as player " + fromPlayer.getName())
                     .color(NamedTextColor.GOLD));
-            hcte.getHuskChat().getAPI().sendChatMessage("global", fromPlayer, message);
+            HuskChatAPI.getInstance().sendChatMessage("global", fromPlayer, message);
         }, () -> {
             invoker.sendMessage(Component.text("Player is not online")
                     .color(NamedTextColor.RED));

@@ -18,7 +18,7 @@
             <artifactId>HuskChat</artifactId>
             <version>any</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../HuskChat/target/HuskChat-Plugin-2.7.1-b169dc7-indev.jar</systemPath>
+            <systemPath>${basedir}/../../HuskChat/target/HuskChat-Plugin-2.7.1-05635a7-indev.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>

@@ -7,7 +7,7 @@ import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
 import dev.truewinter.huskchattestevents.common.HCPlugin;
-import net.william278.huskchat.HuskChat;
+import net.william278.huskchat.velocity.player.VelocityPlayer;
 import org.slf4j.Logger;
 
 import javax.inject.Inject;
@@ -24,7 +24,6 @@ import java.util.Optional;
 public class HuskChatTestEvents implements HCPlugin<Player> {
     private final ProxyServer server;
     private final Logger logger;
-    private HuskChat huskChat;
 
     @Inject
     public HuskChatTestEvents(ProxyServer server, Logger logger) {
@@ -41,8 +40,6 @@ public class HuskChatTestEvents implements HCPlugin<Player> {
                 return;
             }
 
-            huskChat = (HuskChat) h.get();
-
             server.getEventManager().register(this, new VelocityEventListener(logger));
             server.getCommandManager().register("impersonate", new VelocityImpersonateCommand(this));
         }, () -> {
@@ -56,7 +53,7 @@ public class HuskChatTestEvents implements HCPlugin<Player> {
     }
 
     @Override
-    public HuskChat getHuskChat() {
-        return huskChat;
+    public net.william278.huskchat.player.Player getHuskChatPlayer(Player player) {
+        return VelocityPlayer.adapt(player);
     }
 }
